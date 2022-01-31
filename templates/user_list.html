@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Логие
+{% endblock %}
+
+{% block content %}
+<style>
+    .d{
+        margin-bottom: 20px;
+    }
+</style>
+{% for i in object_list %}
+    <div class="d">
+        <h2>{{i.username}}</h2>
+    </div>
+{% endfor %}
+{% endblock %}
